@@ -8,7 +8,6 @@ class Vec3:
     def __init__(self, e0: float, e1: float, e2: float):
         self.vec = [e0, e1, e2]
 
-
     @classmethod 
     def from_list(cls, vec_list: list):
         if len(vec_list) != 3:
@@ -16,7 +15,6 @@ class Vec3:
 
         e0, e1, e2 = vec_list
         return cls(e0, e1, e2)
-
 
     def __getitem__(self, index:int):
         if index > 2:

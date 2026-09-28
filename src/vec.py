@@ -48,7 +48,7 @@ class Vec3:
         elif isinstance(other, (int, float)):
             return Vec3.from_list([other*x for x in self.vec])
         else:
-            retrun NotImplemented
+            return NotImplemented
 
     def __rmul__(self, scalar: int | float) -> Vec3:
         return self.__mul__(scalar)
